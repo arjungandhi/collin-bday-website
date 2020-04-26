@@ -4,7 +4,7 @@ stage_data={
   "1": {
         "big_prompt":"Yo Fucker Let's play A Shitty Game",
         "little_prompt":"Corona is a single chinese monkey with a shotgun that got shrunk down escaped.",
-        "rules":"Listen Up  Bitch. This isn't Hard But I'm sure we'll fuck it up.\n After each round, you get a hint to guess the password. We keep playing until you get it right.",
+        "rules":"Listen Up  Bitch. This isn't Hard But I'm sure we'll fuck it up.\nAfter each round, you get a hint to guess the password. We keep playing until you get it right.",
         "password":"OMACWARH"
         },
   "2": {
@@ -16,7 +16,7 @@ stage_data={
   "3": {
         "big_prompt":"Time To Bend Over and Get Lashed ;)",
         "little_prompt":"Epstien didn't kill himself.",
-        "rules":"OOOOOHHH baby a rule change. See Now. You have to be good.\n You gotta get atleast a bronze medal to get a hint.",
+        "rules":"OOOOOHHH baby a rule change. See Now. You have to be good.\nYou gotta get atleast a bronze medal to get a hint.",
         "password":"Wes Anderson"
         },
   "4": {
@@ -35,16 +35,16 @@ stage_data={
 
 
 wrong=[ "This is papa penguin speaking, and I'm dissapointed",
-        "Do better or I'll outsource your job to my country",
-        "Come on collin, I didn't want you to se this",
-        "Your mother regrets not swallowing to this day",
-        "beep beep you suck.",
-        "We're gonna be here all week arent we.",
-        "The only pokemon you deserve is bidoof.",
-        "A slowpoke would easily outpace you.",
-        "F",
-        "This is why your name has to L's"
-      ]
+  "Do better or I'll outsource your job to my country",
+  "Come on collin, I didn't want you to se this",
+  "Your mother regrets not swallowing to this day",
+  "beep beep you suck.",
+  "We're gonna be here all week arent we.",
+  "The only pokemon you deserve is bidoof.",
+  "A slowpoke would easily outpace you.",
+  "F",
+  "This is why your name has to L's"
+]
 
 pholder=[
       "10 Digit SSN Goes Here.....",
@@ -88,7 +88,7 @@ function checkPassword(input){
 
   } else {
     var text = wrong[Math.floor(Math.random() * wrong.length)];
-    alert(text)
+    alert('Wrong: '+text)
   }
 
 }
@@ -116,9 +116,10 @@ function update(){
   }
 }
 
-function showRules(){
+async function showRules(){
   cur_stage=localStorage.getItem('stage')
-  alert(stage_data[cur_stage]['rules'])
+  setTimeout(function(){alert('Rules: '+stage_data[cur_stage]['rules']) }, 1500);
+  
 
 }
 

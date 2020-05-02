@@ -43,7 +43,13 @@ wrong=[ "This is papa penguin speaking, and I'm dissapointed",
   "The only pokemon you deserve is bidoof.",
   "A slowpoke would easily outpace you.",
   "F",
-  "This is why your name has to L's"
+  "This is why your name has to L's",
+  "I hope a charizard burns you to death",
+  "You're birthdays gonna be over by the time we're done",
+  "Colliinnnnnnn its 10:15",
+  "Somebody call 911, the earth is going to explode by the time this is over",
+  "Why can't you be bigbrained like alakazam",
+  "I hope you kick a geodude"
 ]
 
 pholder=[
